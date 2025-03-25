@@ -29,6 +29,12 @@ body {
     text-align: center;
     padding: 20px;
 }
+
+.left-section img {
+    max-width: 200%;
+    margin-right: 100px;
+    height: auto;
+}
 .left-section h2 {
     color: #333;
     font-size: 22px;
