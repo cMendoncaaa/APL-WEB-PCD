@@ -1,0 +1,20 @@
+{
+  "name": "apl-web-pcd",
+  "version": "1.0.0",
+  "description": "Aplicativo para PCD na WEB",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "dev:teste": "node --watch ./src/public/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cMendoncaaa/APL-WEB-PCD.git"
+  },
+  "author": "Cauã Mendonça, Diego Melo, Guilherme Souza, Luis Ferracini, rodolfo Zukulo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cMendoncaaa/APL-WEB-PCD/issues"
+  },
+  "homepage": "https://github.com/cMendoncaaa/APL-WEB-PCD#readme"
+}
