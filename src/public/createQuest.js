@@ -1,7 +1,9 @@
+// ? IMPORTANDO CLASSES E SUB-CLASSES PARA CRIAÇÃO DE PERGUNTAS
 import Domain from "./services/Domain.js";
 import Quest from "./services/Quest.js";
 import QuestIFBR from "./QuestIFBR.js";
 
+//? CRIAÇÃO DE VARIAVEIS REFERENTE AOS DOMINIOS DE VALOR NUMERICO IF-BR
 let sensorial = new Domain(1, "Dominio Sensorial", 0);
 let comunicacao = new Domain(2, "Dominio Comunicacao", 0);
 let mobilidade = new Domain(3, "Dominio Mobilidade", 0);
@@ -14,7 +16,9 @@ let socializacaoComunit = new Domain(
   0
 );
 
+// ? O PARAMETRO SCORE É DEFINIDO PELO USUARIO FINAL
 //! CRIAÇÃO DE PERGUNTAS DO DOMINIO SENSORIAL
+
 sensorial.addItemDomain(new Quest(1.1, "Ver", 100));
 sensorial.addItemDomain(new Quest(1.2, "Ouvir", 50));
 
@@ -121,6 +125,7 @@ vidaDomestica.calculateScore();
 eduTrabEco.calculateScore();
 socializacaoComunit.calculateScore();
 
+// ! CRIAÇÃO DO QUESTIONARIO DO IF-BR
 let questionnaire = new QuestIFBR();
 
 questionnaire.setQuestions(sensorial);
@@ -132,4 +137,3 @@ questionnaire.setQuestions(eduTrabEco);
 questionnaire.setQuestions(socializacaoComunit);
 
 console.log(questionnaire.toString());
-

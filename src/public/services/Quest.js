@@ -1,3 +1,4 @@
+//? CRIAÇÃO DE CLASSE PAI
 class Quest {
   id;
   name;
